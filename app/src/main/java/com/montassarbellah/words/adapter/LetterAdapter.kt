@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.montassarbellah.words.DetailActivity
 import com.montassarbellah.words.MainActivity
 import com.montassarbellah.words.R
+import com.montassarbellah.words.WordListFragment
 
 /**
  * Adapter for the [RecyclerView] in [MainActivity].
@@ -52,7 +53,7 @@ class LetterAdapter :
         holder.button.setOnClickListener {
             val context = holder.view.context
             val intent = Intent(context, DetailActivity::class.java)
-            intent.putExtra(DetailActivity.LETTER, holder.button.text.toString())
+            intent.putExtra(WordListFragment.LETTER, holder.button.text.toString())
             context.startActivity(intent)
         }
     }
