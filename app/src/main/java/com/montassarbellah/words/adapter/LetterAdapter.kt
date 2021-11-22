@@ -1,17 +1,13 @@
 package com.montassarbellah.words.adapter
 
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.accessibility.AccessibilityNodeInfo
 import android.widget.Button
 import androidx.recyclerview.widget.RecyclerView
-import com.montassarbellah.words.DetailActivity
 import com.montassarbellah.words.MainActivity
 import com.montassarbellah.words.R
-import com.montassarbellah.words.WordListFragment
-
 /**
  * Adapter for the [RecyclerView] in [MainActivity].
  */
@@ -51,10 +47,10 @@ class LetterAdapter :
         val item = list[position]
         holder.button.text = item.toString()
         holder.button.setOnClickListener {
-            val context = holder.view.context
-            val intent = Intent(context, DetailActivity::class.java)
-            intent.putExtra(WordListFragment.LETTER, holder.button.text.toString())
-            context.startActivity(intent)
+            //val context = holder.view.context
+            //val intent = Intent(context, DetailActivity::class.java)
+            //intent.putExtra(WordListFragment.LETTER, holder.button.text.toString())
+            //context.startActivity(intent)
         }
     }
 

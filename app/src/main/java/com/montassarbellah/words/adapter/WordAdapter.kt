@@ -9,7 +9,6 @@ import android.view.ViewGroup
 import android.view.accessibility.AccessibilityNodeInfo
 import android.widget.Button
 import androidx.recyclerview.widget.RecyclerView
-import com.montassarbellah.words.DetailActivity
 import com.montassarbellah.words.R
 import com.montassarbellah.words.WordListFragment
 
